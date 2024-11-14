@@ -1,0 +1,536 @@
+html css js revision-->
+
+1)Are HTML tags and elements the same thing?
+No, they are distinct entities.
+
+2)What are tags and attributes in HTML?
+Tags define elements, and attributes provide additional information about elements
+
+3)What are void elements in HTML?
+Elements that are ignored by browsers.
+
+4)What are different types of lists in HTML?
+Ordered list, unordered list, and definition list.
+(The ordered list has numbers, the unordered list has bullets, and the definition list has terms and definitions.)
+
+5)What is the ‘class’ attribute in HTML?
+'class' is for styling, 'id' is for identification
+
+6)How to optimize website assets loading?
+Use smaller images and minify CSS and JS files.
+Optimize server response time.
+Use content delivery networks (CDNs).
+All of the above.
+
+7)What is the difference between , tags and , tags?
+<strong> and <em> have semantic meaning, while <b> and <i> are purely presentational.
+
+8)What is the significance of <head> and <body> tag in HTML?
+<head> contains metadata, and <body> contains visible content.
+
+9)Can we display a web page inside a web page or Is nesting of webpages possible?
+Yes, the nesting of webpages is possible.
+
+10)What are inline and block-level elements?
+Inline elements example <span> <a> <strong> <em> do not create a new line, while block-level elements example <p> <h1> <div> do start from a new line.
+
+11)In how many ways can we position an HTML element? What are the permissible values of the position attribute?
+Five ways; static, relative, absolute, fixed, sticky.
+
+12)How can you render a website within your own website in HTML?
+Use an <iframe> element with the src attribute set to the URL of the website.
+
+13)What is the correct way to create a hyperlink that opens in a new tab in HTM
+<a href="https://example.com" target="_blank">Link</a>
+
+14)In how many ways can you display HTML elements?
+Three ways: inline, block, and inline-block.
+
+15)In how many ways can we specify the CSS styles for the HTML element?
+Three ways: inline styles(on the element itself in html), internal styles(styles are put inside <styles>tag </styles> inside html code), and external stylesheets(external css files).
+
+16)How many types of CSS can be included in HTML?
+Three types: inline CSS, internal CSS, and external CSS.
+
+17)What is a style sheet?
+A style sheet is a document that contains CSS code.
+
+18)Which of the following is NOT a valid HTML5 semantic element?
+<div> (a div is a generic container with no semantic meaning)
+
+19)What is the purpose of the async attribute
+It specifies that the script should be executed asynchronously, allowing it to load in parallel with other elements.
+
+20)What does the readonly attribute do in an HTML input element?
+It specifies that the input field is read-only but can still be submitted with a form.
+
+21)What is the purpose of the defer attribute in the
+It delays the execution of the script until the entire document is parsed.
+
+22)What are Web Workers?
+Web Workers allow running JavaScript code in background threads to improve performance.
+
+-----------------------------------------
+css mcq 
+
+1)The property in CSS used to change the background color of an element is
+background-color
+
+2)What does the CSS property display: inline-block; do?
+Displays the element as a block-level element with no line break.
+
+3)Which CSS selector has the highest specificity?
+ID selector
+
+4)What does the CSS property box-sizing: border-box; do?
+Includes padding and border in the element's total width and height.
+
+5)What is the purpose of the CSS property z-index?
+Specifies the order of stacked elements along the z-axis.(IT BASICALLY DETERMINES WHICH ELEMENT APPEARS IN FRONT OF OTHERS WHEN THEY OVERLAP)
+
+6)Which CSS property is used to define a flex container?
+display: flex
+
+7)Which property is used to align flex items along the main axis?
+justify-content
+
+8)Which CSS property is used to create a grid layout?
+display: grid
+
+9)How do you define the number of columns in a CSS grid layout?
+grid-template-columns
+
+10)Which CSS property is used to position an element relative to its normal position?
+position: relative
+
+11)Which of the following property controls the horizontal overflow of a block or inline block?
+overflow-x
+
+12)Which unit is not a relative unit in CSS?
+px
+
+13)Which unit is relative to the font-size of the root element?
+rem
+
+14)How does position: sticky; differ from position: fixed;?
+sticky keeps an element in the flow of the document; fixed removes it from the flow.
+
+15)Which value of the position property removes an element from the normal document flow and positions it relative to its nearest positioned ancestor?
+absolute
+
+16)Which pseudo-class is used to apply styles to an element when it is being clicked?
+:active
+
+17)How would you style the last child of a specific type within a parent element?
+parent child:last-of-type
+
+18)How do you hide overflow content that exceeds the dimensions of an element?
+overflow:hidden
+
+19)What does the overflow-y property control?
+Vertical overflow content.
+
+20)What is the effect of setting flex: 1 on a flex item?
+The item will grow to fill available space.
+
+21)How do you create a CSS grid with three columns of equal width?
+grid-template-columns: 1fr 1fr 1fr;
+
+22)How can you create a circular image using CSS?
+border-radius: 50%;
+
+23)In CSS, what is the purpose of the :nth-child() pseudo-class?
+To select elements based on their index in the parent element's children list.
+
+24)Which of the following CSS properties is used to control the spacing between lines of text?
+line-height
+
+25)What is the purpose of the calc() function in CSS?
+To perform calculations to determine CSS property values.
+
+-----------------------------------------
+JAVASCRIPT mcq 
+
+1)What is the difference between let and const? What is the difference between let and var?
+let and const both declare variables with block scope, but const variables cannot be reassigned after initial assignment. let and var both declare variables, but let has block scope while var has function scope.
+
+2)What is the output of this function? function sample() { for (let i = 0; i <= 5; i++) { setTimeout(() => console.log(i), 1000); } }
+0 1 2 3 4 5
+
+3)What is the output of this code? setTimeout(() => { console.log("a")}, 2000); console.log("b");
+b (after 2 seconds) a
+
+4)In above question How can you print "a" first and "b" later without using any extra setTimeouts?
+By using a Promise to control the order of execution.
+
+5)What is process.nextTick?
+It is a function in Node.js used to schedule a callback to be executed in the next iteration of the event loop, immediately after the current operation completes.
+
+6)How can you check if a variable is an array?
+Using the Array.isArray() method.
+
+7)What is the output of console.log(1 + '1'); ?
+11  {Type Coercion: When JavaScript encounters different data types in an arithmetic operation, it attempts to convert them to a common type.
+     String Conversion: In this case, the number 1 is converted to a string '1'.}
+
+8)What is the value of typeof null in JavaScript?
+object
+
+9)What is the output of this code? setImmediate(() => { console.log("first"); }); setTimeout(() => { console.log("second"); }, 0); console.log("third");
+third first second
+
+10)Difference between setImmediate and process.nextTick
+Both setImmediate and process.nextTick are used to schedule asynchronous tasks, but setImmediate executes after the I/O events phase of the event loop, while process.nextTick executes before I/O events.
+
+11)What is the difference between a Promise and a callback?
+Promises handle asynchronous operations in a more structured and manageable way than callbacks, allowing for better error handling and chaining of multiple asynchronous operations.
+
+12)What is the output? let a = new Promise((resolve, reject) => { reject({ msg: 'Something went wrong' }); }); a.then(resolve => { console.log(resolve); }).catch(err => { console.log(err.msg); });
+->
+{ msg: 'Something went wrong' }
+
+13)What is the output? await delay(6000); setTimeout(() => { console.log("first"); }, 10000); console.log("second");
+second (after 6 seconds) first
+
+14)What is a function definition?
+A function definition is a block of code that describes the behavior of a function, including its name, parameters, and the statements to be executed when the function is invoked.
+
+15)What are the differences between let, var, and const in JavaScript?
+let is block-scoped, var is function-scoped, and const is used for constants.
+
+16)Which of the following is NOT an ES6 feature?
+Callbacks
+
+17)What is the main difference between array.map and array.filter in JavaScript?
+array.map creates a new array by applying a function to each element, while array.filter creates a new array with elements that pass a test.
+
+18)How can you find the length of an object in JavaScript?
+Use the Object.keys(obj).length method.
+
+19)What are promises in JavaScript, and what are the three states of promises?
+Promises are used for asynchronous operations, and their states are: Pending, Resolved (Fulfilled), and Rejected.
+
+20)Why do we use promises over callbacks, and why use await and async?
+Promises allow for better error handling and readability in asynchronous code, and await and async make working with promises more convenient.
+
+21)What is the "temporal dead zone" in JavaScript?
+It refers to a period of time when a variable is accessible but not defined.
+
+22)Const person= { Name:p1, Age:24 } Can we change age to 25? Can we do person.push(age:25);
+yes we can change the age to 25 but not by using .push () method as person is not an array but using this way -> const person = { Name: 'p1', Age: 24 }; person.Age = 25;
+
+23)Which of the following functions generates a random number between 10 and 99 in JavaScript?
+Math.random() * 90 + 10
+[explanation -> Math.random(): This function generates a random decimal number between 0 (inclusive) and 1 (exclusive).
+Math.random() * 90: This multiplies the random number by 90, giving a range from 0 (inclusive) to 90 (exclusive).
+Math.random() * 90 + 10: This adds 10 to the result, shifting the range to 10 (inclusive) to 100 (exclusive).]
+
+24)What is the main difference between setTimeout, setInterval, and setImmediate in JavaScript?
+setTimeout executes code once after a specified delay, setInterval repeatedly executes code at a specified interval, and setImmediate executes code immediately after the current event loop.
+
+25)What is the main difference between null and undefined in JavaScript?
+null represents an explicitly assigned "empty" or "non-existent" value, while undefined represents an uninitialized or missing value.
+
+26)What is the main difference between "undeclared" and "undefined" variables in JavaScript?
+"Undeclared" variables are not a valid concept in JavaScript.
+
+27)What is the main difference between the == and === operators in JavaScript?
+== performs type coercion, while === does not perform type coercion and checks both value and type.
+
+28)What is the difference between the spread and rest operators in JavaScript?
+The spread operator is used to merge arrays and objects, while the rest operator is used to collect function arguments into an array.
+
+29)Given the code [a, ...b] = [1, 2, 3, 4, 5], what are the values of a and b?
+a is 1, and b is [2, 3, 4, 5].
+{explanation -> The first element, a, will be assigned the first value of the array on the right-hand side.
+The rest operator (...b) collects the remaining elements into an array named b.}
+
+30)const fun = () => arguments.length; console.log(fun(1,2)); What is the output?
+This code will give us an error as we haven't defined arguments on our side and there is no inbuilt arguments object in a function
+
+31)Let str=”JavaScript=Node=Express”; replace “=” with “.”?
+let newStr = str.replace(/=/g, "."); 
+console.log(newStr); 
+// Output: "JavaScript.Node.Express"
+
+32)Reverse the string given str=”India” to "aidnI"
+let reversedStr = str.split("").reverse().join(""); 
+output will be ->"aidnI"
+
+33)Let arr=[7,8,9,10] Write a function to check if the given number "n" exists in the array. If present remove the number from the array , return the remaining array excluding the number else print element not present. Example Input 1 arr=[7,8,9,10] , n=8 Output arr=[7,9,10] Example Input 2 arr=[7,8,9,10] , n=10 Output "Element not present"
+
+function checkAndRemove(arr, n) {
+//we passed n to indexOf to search the index of n if there in our array
+ const index = arr.indexOf(n); 
+
+//if index found we splice it or remove it and return the array 
+if (index !== -1) {
+ arr.splice(index, 1);
+ return arr;
+                           }
+else {
+ return "Element not present";
+        }
+                                }
+
+
+34)When is it appropriate to use async/await in JavaScript?
+async/await is used when working with promises and asynchronous code to make it appear more like synchronous code.
+
+35)What is the reason for using await inside an async function in JavaScript?
+await ensures that the function execution is paused until the awaited promise is resolved or rejected.
+
+36)What are callbacks in JavaScript, and what is "Callback hell"?
+Callbacks are functions passed as arguments to other functions to be executed later, and "Callback hell" refers to the complex and deeply nested structure of callbacks, making code hard to read and maintain.
+
+37)Can you provide an example of "Callback hell" in JavaScript?
+fs.readFile('file1.txt', function (err, data) { fs.readFile('file2.txt', function (err, data) { fs.readFile('file3.txt', function (err, data) { // ... more nested callbacks }); }); });
+
+38)What will the output (true or false) of the following code be? console.log(null === undefined); console.log(null == undefined);
+The first statement will output false, and the second statement will output true.
+{explanation-> 
+
+Strict Equality (===)
+This operator checks for both value and type equality.
+null and undefined are distinct types, even though they represent absence of value.
+Therefore, null === undefined is false.
+
+Loose Equality (==)
+This operator performs type coercion before comparison.
+In JavaScript, null and undefined are treated as equal during type coercion.
+Hence, null == undefined is true.}
+
+39)What is event bubbling and event capturing (Event Propagation)? What is the difference between them?
+Event bubbling is the propagation of an event from child elements to their parent elements, while event capturing is the opposite, propagating from parents to children.
+
+40)What is function currying?
+Function currying is a way to turn a function with multiple arguments into a sequence of functions, each taking one argument.
+
+41)What is an IIFE?
+IIFE is a programming pattern where a function is defined and executed immediately after its creation.
+
+42)Explain the different ways of creating object in javascript? Explain all the 3 ways.
+There are 3 different ways to create an object and they can be explained and summarized below -> 
+A) Object Literals -> {}
+You define the object using curly braces {} and specify its properties and values.
+const person = {
+ name: 'Aditya', 
+age: 30, 
+greetMe: function() { 
+  console.log('Hello, ' + this.name); 
+                 } 
+};
+person.greetMe(); // Output: Hello, Aditya
+
+B) Constructor Functions
+Constructor functions are used to create multiple instances of an object with the same properties and methods. You define a function and use the new keyword to create instances.
+
+function Person(name, age) { 
+this.name = name;
+ this.age = age; 
+ this.greet = function() { 
+      console.log('Hello, ' + this.name); 
+                                     }; 
+} 
+const person1 = new Person('Aditya', 25); 
+const person2 = new Person('Gagan', 28); 
+
+person1.greet(); // Output: Hello, Aditya
+person2.greet(); // Output: Hello, Gagan 
+
+C) ES6 Classes
+ES6 introduced the class syntax, which provides a more intuitive and cleaner way to create objects and handle inheritance. Classes are essentially syntactic sugar over constructor functions.
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log('Hello, ' + this.name);
+  }
+}
+
+const person1 = new Person('Aditya', 25);
+const person2 = new Person('Diana', 40);
+
+person1.greet(); // Output: Hello, Aditya
+person2.greet(); // Output: Hello, Diana
+
+
+43)What are Object Prototype Methods in JavaScript?
+Methods that are shared among all instances of objects created from the same constructor function.
+
+44)What is "object chaining" in JavaScript?
+A programming technique where multiple methods or properties are called on an object in a sequence, and each method returns the object itself.
+
+45)What is the main difference between fat arrow function and normal function?
+Arrow functions always have a lexical this value, while normal functions have a dynamic this value.
+
+46)Can you give an example to explain how "this" works differenetly with fat arrow function and normal function?
+// Normal function
+function Person(name) {
+  this.name = name;
+  this.greet = function() {
+    console.log('Hello, ' + this.name);
+  };
+}
+
+const person1 = new Person('Alice');
+person1.greet(); // Output: Hello, Alice
+
+// Arrow function
+function PersonArrow(name) {
+  this.name = name;
+  this.greet = () => {
+    console.log('Hello, ' + this.name);
+  };
+}
+
+const person2 = new PersonArrow('Bob');
+person2.greet(); // Output: Hello, Bob
+
+In the normal function, this refers to the instance of the object. In the arrow function, this is lexically bound to the context in which the function was defined.
+
+47)What are the advantages of Axios compared to other competitors like fetch, http, got, etc.?
+Axios provides a simpler and more intuitive API for making HTTP requests.
+Axios automatically transforms JSON responses and handles errors more gracefully.
+Axios has built-in support for request and response interceptors.
+
+48)What are closures?
+Closures are a mechanism that allows functions to access and remember their lexical scope, even after they have finished executing.
+
+49)Explain closures with an example?
+function createCounter() {
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
+}
+
+const counter = createCounter();
+console.log(counter()); // Output: 1
+console.log(counter()); // Output: 2
+console.log(counter()); // Output: 3
+
+In this example, the inner function retains access to the count variable even after the outer function has finished executing, demonstrating a closure.
+
+50)What is the output of this console.log(0.1 + 0.2). Why is it not 0.3?
+The answer to this does'nt come back as 0.3 because of the way floating-point arithmetic is handled in JavaScript (and many other programming languages). Floating-point numbers are represented in a way that can lead to precision errors when performing arithmetic operations. As a result, 0.1 + 0.2 does not exactly equal 0.3, but instead results in a slightly imprecise value.
+
+51)What will be the output of this console.log((0.2+ 0.3) === 0.5)
+True
+
+52)How to iterate inside and object and print all the values inside it without the keys? Give a code example?
+If in case its required that we have to iterate over an object without keys we can use .values method on that object .The Object.values() method is a built-in JavaScript function that returns an array of a given object's own enumerable property values. This means it extracts all the values from the object and puts them into an array, leaving out the keys.
+Example -> 
+const person = { name: 'Aditya', age: 25, city: 'India' }; 
+Object.values(person).forEach(value => {
+ console.log(value);  // Output: ['Aditya', 25, 'India']
+});
+
+In this example, Object.values(person) returns an array of the object's values, and forEach is used to iterate over each value and print it to the console.
+.The forEach() method is an array method that executes a provided function once for each array element. It allows you to iterate over the elements of an array and perform an action for each element.
+
+53)What is the NaN property in JavaScript?
+The NaN property represents a value that is "Not a Number" and is returned when a mathematical operation fails.
+
+54)Explain pass by value and pass by reference? Give code example of how you would pass by reference in javascript?
+Pass by Value: When a variable is passed by value, a copy of the variable's value is passed to the function. Changes made to the parameter inside the function do not affect the original variable.
+example -> 
+let a = 10;
+function changeValue(x) {
+  x = 20;
+}
+changeValue(a);
+console.log(a); // Output: 10
+
+Pass by Reference: When a variable is passed by reference, a reference to the variable's memory address is passed to the function. Changes made to the parameter inside the function affect the original variable.
+example ->
+
+function modifyArray(arr) {
+  arr[0] = 10;
+}
+
+let myArray = [1, 2, 3];
+modifyArray(myArray);
+console.log(myArray); // Output: [10, 2, 3]
+
+We create an array myArray with elements [1, 2, 3].
+We pass this array to the modifyArray function.
+Inside the function, we modify the first element of the array to 10.
+Since arrays are passed by reference, the change made inside the function is reflected in the original myArray. Thus, when we print myArray outside the function, it shows the updated array [10, 2, 3].
+
+
+55)What does the "this" keyword represent in JavaScript?
+The current execution context or the object that owns the currently executing code.
+
+56)What is memoization in javascript? Can you give a code example implementing the same?
+Memoization is an optimization technique used to speed up function calls by storing the results of heavy function calls and returning the cached result when the same inputs occur again.In simpler words, it consists of storing in cache the output of a function, and making the function check if each required computation is in the cache before computing it.
+Example code showing memoization ->
+
+function fibonacci(n) {
+  if (n <= 1) {
+    return n;
+  }
+
+  if (fibonacci.cache[n]) {
+    return fibonacci.cache[n];
+  }
+
+  fibonacci.cache[n] = fibonacci(n - 1) + fibonacci(n - 2);
+  return fibonacci.cache[n];
+}
+
+fibonacci.cache = {};
+
+console.log(fibonacci(10)); // Output: 55
+console.log(fibonacci(10)); // Output: 55 (cached result)
+
+57)What is the data type of variables in JavaScript?
+JavaScript variables can have any data type, and their data type can change dynamically.
+
+58)What are escape characters? Why are they used? Give code example.
+Escape characters are used to represent special characters within a string, such as newlines, tabs, or quotes. They are used to include characters that would otherwise be difficult to represent in a string.
+example -> 
+const str = "He said, \"Hello, World!\""; console.log(str); 
+// Output: He said, "Hello, World!"
+
+59)What is break and continue statements? How are they different?
+"break" is used to exit a loop prematurely, while "continue" is used to skip the current iteration of a loop and proceed to the next one.
+
+60)What is the typeof an array in JavaScript?
+The typeof operator returns "object."
+
+61)What are anonymous functions in JavaScript?
+Anonymous functions are functions that are defined without a formal function name and can be used as expressions or assigned to variables.
+
+62)Give example of anonymous function
+example  of a anonymous function is -> 
+document.getElementById("myButton").addEventListener("click", function() {
+  alert("Button clicked!");
+});
+
+63)What is the difference between the event.preventDefault() and event.stopPropagation() methods in JavaScript?
+event.preventDefault() prevents the default behavior of the event, while event.stopPropagation() stops the event from propagating to its parent elements.
+
+64)Here's the question converted into a multiple-choice question (MCQ) with options and the correct answer: What are higher-order functions in JavaScript?
+Higher-order functions are functions that operate on other functions by either taking them as arguments or returning them.
+
+65)Explain higher order functions with code example.
+A higher-order function is a function that can accept a function as one of its parameters and it can also return a function as its return value or it can do both return as well as accept a function. A higher-order function can also take as well as return other types of values but it either has to take a function as a parameter or return a function as its return value with them. It can be declared using any syntax available in JavaScript to declare functions.
+
+example -> 
+function higherOrderFunc(a){
+    return function(b){
+        console.log(a*b)
+    }
+}
+higherOrderFunc(3)(53);
+
+//output -> 159
+
+65)
+
